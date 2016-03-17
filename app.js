@@ -11,7 +11,8 @@ var users = require('./server/routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'server/views'));
+//app.set('views', path.join(__dirname, 'server/views'));
+app.set('views', path.join(__dirname, 'client'));
 //app.set('view engine', 'ejs');
 app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
@@ -51,7 +52,7 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
-  res.render('error', {
+  res.render('error.html', {
     message: err.message,
     error: {}
   });

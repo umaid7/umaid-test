@@ -1,8 +1,39 @@
-body {
-  padding: 50px;
+.landingPage {
+  padding: 75px 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.homePage {
+
 }
+
+
+.headerBarColor{
+  background-color: #333333 !important;
+}
+
+.ulLinks{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.liLinks{
+  float:left;
+  display:block;
+  margin:0;
+  padding:0 10px;
+  border-left:#ccc solid 1px;
+}
+
+.liLinks:first-child {border-left:0}
+
+.navbar-linkColor{
+  color: white;
+  font-size: 13px;
+}
+
+a.navbar-linkColor:hover, a.navbar-linkColor:active {
+  color: gray;
+}
+
