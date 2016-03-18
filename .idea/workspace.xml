@@ -34,7 +34,7 @@
       <file leaf-file-name="landingView.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/landingView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7669173">
+            <state vertical-scroll-proportion="1.150376">
               <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
               <folding />
             </state>
@@ -349,7 +349,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20089285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -627,7 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/landingView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7669173">
+        <state vertical-scroll-proportion="1.150376">
           <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
           <folding />
         </state>
