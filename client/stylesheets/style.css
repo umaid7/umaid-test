@@ -16,6 +16,7 @@
   list-style:none;
   margin:0;
   padding:0;
+  float: right;
 }
 
 .liLinks{
@@ -37,3 +38,18 @@ a.navbar-linkColor:hover, a.navbar-linkColor:active {
   color: gray;
 }
 
+#customDisplay{
+  display: flex;
+}
+
+#customHeader{
+  height: 4px;
+}
+
+#customcarouselBottom{
+  bottom: 125px;
+}
+
+.navbar{
+  min-height:50px;
+}
