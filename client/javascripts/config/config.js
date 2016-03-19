@@ -1,11 +1,11 @@
-angular.module('stacky-note',['ui.router','ui.bootstrap'])
+angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants'])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 
 
-        $stateProvider.state('landingPage', {
-            url: '/landingPage',
-            templateUrl: 'templates/landingView.html'
+        $stateProvider.state('/', {
+            url: '/',
+            templateUrl: 'templates/landingPage.html'
            // controller:'LoginCtrl'
         });
 
@@ -15,21 +15,28 @@ angular.module('stacky-note',['ui.router','ui.bootstrap'])
           //  controller:'HomeCtrl'
         });
 
-        $urlRouterProvider.otherwise('/landingPage');
+        $stateProvider.state('signup', {
+            url: '/signup',
+            templateUrl: 'templates/signup.html',
+             controller:'SignUpCtrl'
+        });
 
+        $stateProvider.state('signin', {
+            url: '/signin',
+            templateUrl: 'templates/signin.html',
+            controller:'SignInCtrl'
+        });
+
+        $urlRouterProvider.otherwise('/');
+
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false,
+        });
     })
 
     .run(function($state,$rootScope,$log) {
 /*
-        var ref = new Firebase('https://boiling-fire-1862.firebaseio.com/');
-        var authInfo = null;
-        $firebaseAuth(ref).$onAuth(function (authData) {
-            authInfo=authData;
-            if (!authData) {
-                $state.go('login');
-            }
-        });
-
 
         $rootScope.firstAttempt=false;
 

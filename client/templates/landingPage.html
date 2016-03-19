@@ -1,36 +1,67 @@
+<div class="landingView">
+    <div class="navbar-wrapper">
+        <div class="container">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid headerBarColor">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img width="125px" alt="Brand" src="images/brandLogo.png">
-            </a>
-        </div>
-        <div class="navbar-text navbar-right">
-            <ul class="ulLinks">
-            <li class="liLinks"><a href="#" class="navbar-linkColor">SIGN IN</a></li>
-                <li class="liLinks"><a href="#" class="navbar-linkColor">CREATE AN ACCOUNT</a></li>
-                </ul>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid headerBarColor">
+                    <div class="navbar-header" id="customHeader">
+                        <a class="navbar-brand" href="#">
+                            <img width="125px" alt="Brand" src="images/brandLogo.png">
+                        </a>
+                    </div>
+                    <div class="navbar-text navbar-right">
+                        <ul class="ulLinks">
+                            <li class="liLinks"><a href="#" class="navbar-linkColor">SIGN IN</a></li>
+                            <li class="liLinks"><a href="signup" class="navbar-linkColor">CREATE AN ACCOUNT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
         </div>
     </div>
-</nav>
-<div class="">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>-->
         <div data-target="#myCarousel" data-slide-to="0" class="active"></div>
-        <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="../images/background.jpg" alt="back">
-            </div>
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>WELCOME TO STACKYNOTES!</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget.</p>
-                    <a class="btn btn-large btn-primary" href="#">GET STARTED!</a>
+            <div class="item active" id="customDisplay">
+                <img class="first-slide" src="../images/background.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption" id="customcarouselBottom">
+                        <h1>WELCOME TO STACKYNOTE!</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a class="btn btn-lg" id="customBtn1" href="/signup" role="button">GET STARTED!</a></p>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-    </div>
+
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and features
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+    </div><!-- /.container marketing-->
+
+        <!-- FOOTER -->
+        <footer id="footer" class="footer footerHeight">
+            <div class="footerText">&copy; 2016 Stackynote. All rights reserved.</div>
+        </footer>
+
 
 </div>

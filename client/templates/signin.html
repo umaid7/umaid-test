@@ -1,0 +1,71 @@
+<div>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid headerBarColor">
+                    <div class="navbar-header" id="customHeader">
+                        <a class="navbar-brand" href="#">
+                            <img width="125px" alt="Brand" src="images/brandLogo.png">
+                        </a>
+                    </div>
+                    <div class="navbar-text navbar-right">
+                        <ul class="ulLinks">
+                            <li class="liLinks"><a href="#" class="navbar-linkColor">SIGN IN</a></li>
+                            <li class="liLinks"><a href="signup" class="navbar-linkColor">CREATE AN ACCOUNT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="container customPadding">
+        <h3 class="signUpHeading">SIGN IN TO YOUR ACCOUNT</h3>
+        <form ng-submit="SignInUser()" class="form-horizontal">
+
+            <div class="form-group">
+                <div class="col-sm-5  col-sm-offset-2 signUpInputTextbox">
+                    <input type="email" class="form-control" id="inputEmail" ng-model="user.username" placeholder="EMAIL ADDRESS">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-5 col-sm-offset-2 signUpInputTextbox">
+                    <input type="password" class="form-control" id="inputPassword" ng-model="user.password" placeholder="PASSWORD">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-1 col-sm-10" style="text-align: center">
+                    <button type="submit" class="btn btn-lg" id="customSignInBtn">SIGN IN</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <h4 style="text-align: center;font-weight: bold">OR</h4>
+        <div class="col-sm-offset-1 col-sm-10" style="text-align: center">
+            <button type="button" class="btn btn-lg" ng-click="GotoSignUp()" id="customSignUpBtn">SIGN UP</button>
+        </div>
+
+        <div class="alert alert-danger" ng-show="showWrongUserAlert" ng-hide="!showWrongUserAlert">
+            <strong>Warning!</strong> User already exists with the Username.
+        </div>
+        <div class="alert alert-danger" ng-show="showInputAlert" ng-hide="!showInputAlert">
+            <strong>Warning!</strong> Please type input fields first.
+        </div>
+
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer footerHeight">
+        <div class="footerText">&copy; 2016 Stackynote. All rights reserved.</div>
+    </footer>
+</div>
+
+
+
+
+
+

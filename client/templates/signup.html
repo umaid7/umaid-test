@@ -1,0 +1,73 @@
+<div>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid headerBarColor">
+                    <div class="navbar-header" id="customHeader">
+                        <a class="navbar-brand" href="#">
+                            <img width="125px" alt="Brand" src="images/brandLogo.png">
+                        </a>
+                    </div>
+                    <div class="navbar-text navbar-right">
+                        <ul class="ulLinks">
+                            <li class="liLinks"><a href="#" class="navbar-linkColor">SIGN IN</a></li>
+                            <li class="liLinks"><a href="signup" class="navbar-linkColor">CREATE AN ACCOUNT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="container customPadding">
+        <h3 class="signUpHeading">JOIN STACKYNOTE NOW!</h3>
+        <form ng-submit="createUser()" class="form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-5 col-sm-offset-2 signUpInputTextbox">
+                    <input type="text" class="form-control" id="inputName" ng-model="user.fullName" placeholder="FULL NAME">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-5  col-sm-offset-2 signUpInputTextbox">
+                    <input type="email" class="form-control" id="inputEmail" ng-model="user.username" placeholder="EMAIL ADDRESS">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-5 col-sm-offset-2 signUpInputTextbox">
+                    <input type="password" class="form-control" id="inputPassword" ng-model="user.password" placeholder="PASSWORD">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-1 col-sm-10" style="text-align: center">
+                    <button type="submit" class="btn btn-lg" id="customSignUpBtn">SIGN UP</button>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-success" ng-show="showCreatedUserAlert" ng-hide="!showCreatedUserAlert">
+            <strong>Success!</strong> User has been created.
+        </div>
+        <div class="alert alert-danger" ng-show="showAlreadyUserAlert" ng-hide="!showAlreadyUserAlert">
+            <strong>Warning!</strong> User already exists with the Username.
+        </div>
+        <div class="alert alert-danger" ng-show="showInputAlert" ng-hide="!showInputAlert">
+            <strong>Warning!</strong> Please type input fields first.
+        </div>
+        <p style="text-align: center">By clicking sign up,you agree to the <a>Terms of Service</a> and <a>Privacy Policy</a>,<br>including <a>Cookie Use</a>.Others users
+        will be able to find you by name and<br> email address you provided above.</p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer footerHeight">
+        <div class="footerText">&copy; 2016 Stackynote. All rights reserved.</div>
+    </footer>
+</div>
+
+
+
+
+
+
