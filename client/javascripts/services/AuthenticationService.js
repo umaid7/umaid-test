@@ -32,6 +32,17 @@ angular.module('stacky-note')
                         $log.log(msg);
                     });
                 return deferred.promise;
+            },
+            logOut:function(){
+                var deferred = $q.defer();
+                $http.get(ApiUrl + "/logout")
+                    .success(function () {
+                        deferred.resolve();
+                    }).error(function (msg, code) {
+                        deferred.reject(msg);
+                        $log.log(msg);
+                    });
+                return deferred.promise;
             }
         }
     }])

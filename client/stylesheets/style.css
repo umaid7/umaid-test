@@ -50,7 +50,7 @@
 
 .navbar-linkColor{
   color: white;
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 a.navbar-linkColor:hover, a.navbar-linkColor:active {
@@ -124,5 +124,44 @@ a.navbar-linkColor:hover, a.navbar-linkColor:active {
   font-size: 14px;
   width: 130px;
   margin-top: 15px;
+  color: white;
+}
+
+.signInAlerts{
+  width: 50% !important;
+  text-align: center !important;
+}
+
+.signUpPara{
+  text-align: center;
+  clear: both;
+}
+
+#menuBtn{
+  display: flex;
+  padding-top: 25px;
+  color: black;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+#wrapper.homeMain{
+  background-color: #344860;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#sidebar-wrapper.background{
+  background-color: white;
+}
+
+.menuAnchor{
+  color: black!important;
+}
+
+#page-content-wrapper.textColor{
   color: white;
 }

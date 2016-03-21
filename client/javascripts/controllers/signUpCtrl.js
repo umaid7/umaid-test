@@ -28,7 +28,7 @@ angular.module('stacky-note')
                         $interval(function() {
                             $scope.showCreatedUserAlert=false;
                         }, 3000);
-                        $state.go('home');
+                        $state.go('signin');
                     }
                     else if(data.messageCode==2){
                         $scope.showAlreadyUserAlert=true;

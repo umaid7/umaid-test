@@ -11,7 +11,7 @@
                     </div>
                     <div class="navbar-text navbar-right">
                         <ul class="ulLinks">
-                            <li class="liLinks"><a href="#" class="navbar-linkColor">SIGN IN</a></li>
+                            <li class="liLinks"><a href="signin" class="navbar-linkColor">SIGN IN</a></li>
                             <li class="liLinks"><a href="signup" class="navbar-linkColor">CREATE AN ACCOUNT</a></li>
                         </ul>
                     </div>
@@ -46,19 +46,22 @@
                 </div>
             </div>
         </form>
-        <div class="alert alert-success" ng-show="showCreatedUserAlert" ng-hide="!showCreatedUserAlert">
-            <strong>Success!</strong> User has been created.
-        </div>
-        <div class="alert alert-danger" ng-show="showAlreadyUserAlert" ng-hide="!showAlreadyUserAlert">
-            <strong>Warning!</strong> User already exists with the Username.
-        </div>
-        <div class="alert alert-danger" ng-show="showInputAlert" ng-hide="!showInputAlert">
-            <strong>Warning!</strong> Please type input fields first.
-        </div>
-        <p style="text-align: center">By clicking sign up,you agree to the <a>Terms of Service</a> and <a>Privacy Policy</a>,<br>including <a>Cookie Use</a>.Others users
-        will be able to find you by name and<br> email address you provided above.</p>
+
 
     </div>
+
+    <div class="alert alert-success alert alert-danger col-sm-offset-3 col-sm-10 signInAlerts" ng-show="showCreatedUserAlert" ng-hide="!showCreatedUserAlert">
+        <strong>Success!</strong> User has been created.
+    </div>
+    <div class="alert alert-danger alert alert-danger col-sm-offset-3 col-sm-10 signInAlerts" ng-show="showAlreadyUserAlert" ng-hide="!showAlreadyUserAlert">
+        <strong>Warning!</strong> User already exists with the Username.
+    </div>
+    <div class="alert alert-warning alert alert-danger col-sm-offset-3 col-sm-10 signInAlerts" ng-show="showInputAlert" ng-hide="!showInputAlert">
+        <strong>Warning!</strong> Please type input fields first.
+    </div>
+    <br/>
+    <div class="signUpPara">By clicking sign up,you agree to the <a>Terms of Service</a> and <a>Privacy Policy</a>,<br>including <a>Cookie Use</a>.Others users
+        will be able to find you by name and<br> email address you provided above.</div>
 
     <!-- FOOTER -->
     <footer id="footer" class="footer footerHeight">

@@ -11,7 +11,7 @@
                     </div>
                     <div class="navbar-text navbar-right">
                         <ul class="ulLinks">
-                            <li class="liLinks"><a href="#" class="navbar-linkColor">SIGN IN</a></li>
+                            <li class="liLinks"><a href="signin" class="navbar-linkColor">SIGN IN</a></li>
                             <li class="liLinks"><a href="signup" class="navbar-linkColor">CREATE AN ACCOUNT</a></li>
                         </ul>
                     </div>
@@ -47,15 +47,13 @@
         <div class="col-sm-offset-1 col-sm-10" style="text-align: center">
             <button type="button" class="btn btn-lg" ng-click="GotoSignUp()" id="customSignUpBtn">SIGN UP</button>
         </div>
-
-        <div class="alert alert-danger" ng-show="showWrongUserAlert" ng-hide="!showWrongUserAlert">
-            <strong>Warning!</strong> User already exists with the Username.
-        </div>
-        <div class="alert alert-danger" ng-show="showInputAlert" ng-hide="!showInputAlert">
-            <strong>Warning!</strong> Please type input fields first.
-        </div>
-
-
+    </div>
+    <br>
+    <div class="alert alert-danger col-sm-offset-3 col-sm-10 signInAlerts" ng-show="showWrongUserAlert" ng-hide="!showWrongUserAlert">
+        <strong>Warning!</strong>Incorrect Username and Password.Please try again
+    </div>
+    <div class="alert alert-warning col-sm-offset-3 col-sm-10 signInAlerts" ng-show="showInputAlert" ng-hide="!showInputAlert">
+        <strong>Warning!</strong> Please type input fields first.
     </div>
 
     <!-- FOOTER -->

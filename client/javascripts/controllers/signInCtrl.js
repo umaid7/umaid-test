@@ -25,17 +25,13 @@ angular.module('stacky-note')
             {
                 AuthenticationService.loginUser($scope.user).then(function(data){
                     console.log(data);
-                    if(data.messageCode==1){
-                        $scope.showCreatedUserAlert=true;
-                        $interval(function() {
-                            $scope.showCreatedUserAlert=false;
-                        }, 3000);
+                    if(data.success==true){
                         $state.go('home');
                     }
-                    else if(data.messageCode==2){
-                        $scope.showAlreadyUserAlert=true;
+                    else{
+                        $scope.showWrongUserAlert=true;
                         $interval(function() {
-                            $scope.showAlreadyUserAlert=false;
+                            $scope.showWrongUserAlert=false;
                         }, 3000);
                     }
                 })

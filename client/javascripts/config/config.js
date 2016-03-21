@@ -1,4 +1,4 @@
-angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants'])
+angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants','ui.tree'])
 
 .config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 
@@ -11,8 +11,8 @@ angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants']
 
         $stateProvider.state('home', {
             url: '/home',
-            templateUrl: 'templates/home.html'
-          //  controller:'HomeCtrl'
+            templateUrl: 'templates/homePage.html',
+             controller:'HomeCtrl'
         });
 
         $stateProvider.state('signup', {
