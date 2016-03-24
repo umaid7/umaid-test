@@ -1,4 +1,4 @@
-angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants','ui.tree'])
+angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants','ui.tree','xeditable'])
 
 .config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 
@@ -11,7 +11,7 @@ angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants',
 
         $stateProvider.state('home', {
             url: '/home',
-            templateUrl: 'templates/homePage.html',
+            templateUrl: 'templates/home.html',
              controller:'HomeCtrl'
         });
 
@@ -35,7 +35,7 @@ angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants',
         });
     })
 
-    .run(function($state,$rootScope,$log) {
+    .run(function($state,$rootScope,$log,editableOptions,editableThemes) {
 /*
 
         $rootScope.firstAttempt=false;
@@ -48,5 +48,6 @@ angular.module('stacky-note',['ui.router','ui.bootstrap','stacky-note-contants',
 
             }
         });*/
-
+        editableOptions.theme = 'bs3';
+      //  editableThemes['bs3'].buttonsTpl = [];
     })
